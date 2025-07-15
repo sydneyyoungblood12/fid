@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blackstone Bistro: Pizza-on-Demand</title>
+</head>
+<body>
+
+  <h1>Blackstone Bistro | Pizza-on-Demand</h1>
+
+  <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+
+  <form action="submit-order.php" method="post"> <!-- Replace with your backend script -->
+
+    <h2>Your Information</h2>
+
+    <p>Name:<br>
+      <input type="text" name="name" >
+    </p>
+
+    <p>Address:<br>
+      <input type="text" name="address" >
+    </p>
+
+    <p>Telephone Number:<br>
+      <input type="tel" name="phone" >
+    </p>
+
+    <p>Email:<br>
+      <input type="email" name="email" >
+    </p>
+
+    <p>Delivery Instructions:<br>
+      <textarea name="instructions" rows="4" cols="40"></textarea>
+    </p>
+
+    <h2>Design Your Pizza</h2>
+
+    <p>Crust (choose one):<br>
+      <input type="radio" name="crust" value="Classic white" required> Classic white<br>
+      <input type="radio" name="crust" value="Multigrain"> Multigrain<br>
+      <input type="radio" name="crust" value="Cheese-stuffed crust"> Cheese-stuffed crust<br>
+      <input type="radio" name="crust" value="Gluten-free"> Gluten-free
+    </p>
+
+    <p>Toppings (choose as many as you want):<br>
+      <input type="checkbox" name="toppings[]" value="Red sauce"> Red sauce<br>
+      <input type="checkbox" name="toppings[]" value="White sauce"> White sauce<br>
+      <input type="checkbox" name="toppings[]" value="Mozzarella Cheese"> Mozzarella Cheese<br>
+      <input type="checkbox" name="toppings[]" value="Pepperoni"> Pepperoni<br>
+      <input type="checkbox" name="toppings[]" value="Mushrooms"> Mushrooms<br>
+      <input type="checkbox" name="toppings[]" value="Peppers"> Peppers<br>
+      <input type="checkbox" name="toppings[]" value="Anchovies"> Anchovies
+    </p>
+
+    <p>How many pizzas:<br>
+      <input type="number" name="quantity" min="1" max="20" value="1" required>
+    </p>
+
+    <p>
+      <button type="submit">
+        <img src="submit.gif" alt="Submit" width="200">
+
